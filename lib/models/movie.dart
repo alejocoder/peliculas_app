@@ -33,6 +33,8 @@ class Movie {
   double? voteAverage;
   int? voteCount;
 
+  String? heroId;
+
   get fullPosterImg {
     if (posterPath != null) {
       return 'https://image.tmdb.org/t/p/w500$posterPath';
@@ -41,7 +43,7 @@ class Movie {
   }
 
   get fullbackdropPath {
-    if (posterPath != null) {
+    if (backdropPath != null) {
       return 'https://image.tmdb.org/t/p/w500$backdropPath';
     }
     return 'https://i.stack.imgur.com/GNhxO.png';
